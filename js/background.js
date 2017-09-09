@@ -6,8 +6,8 @@ var canvas = document.getElementById('demo-canvas'),
 // console.log(typeof can_w);
 
 var ball = {
-      x: 0,
-      y: 0,
+      x: 1,
+      y: 1,
       vx: 0,
       vy: 0,
       r: 0,
@@ -25,8 +25,8 @@ var ball = {
    alpha_phase = 0,
     
 // Line
-   link_line_width = 0.5,
-   dis_limit = 300,
+   link_line_width = 0.4,
+   dis_limit = 200,
    add_mouse_point = true,
    mouse_in = false,
    mouse_ball = {
