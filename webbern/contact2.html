@@ -77,15 +77,16 @@ top: 80%;
 left:50%;
 right:50%;">
   <div class="dock-container">
-  <a class="dock-item" id="nid" href="#"><span style="color:white;">ABOUT</span><img src="img/uevents.png" alt="Contact" /></a>
-  <a class="dock-item" id="nid1" href="#"><span style="color:white">OUR SKILLs</span><img src="img/developer.png" alt="Contact" /></a>
-	<a class="dock-item" id="nid2" href="#"><span style="color:white;">OUR Works</span><img src="img/premium.png" alt="Contact" /></a>
-  <a class="dock-item" id="nid3" href="horizon/index.html"><span style="color:white">TEAM MEMBERS</span><img src="img/board.png" alt="Contact" /></a>
-	<a class="dock-item" id="nid4" href="contact2.html"><span style="color:white">CONTACT</span><img src="img/if_gmail_1147408.png" alt="Contact" /></a>  </div>
+  <a class="dock-item" id="nid" href="#"><span style="color:white;">ABOUT</span><img src="#" alt="" /></a>
+  <a class="dock-item" id="nid1" href="#"><span style="color:white">OUR SKILLs</span><img src="#" alt="" /></a>
+	<a class="dock-item" id="nid2" href="#"><span style="color:white;">OUR Works</span><img src="#" alt="" /></a>
+  <a class="dock-item" id="nid3" href="horizon/index.html"><span style="color:white">TEAM MEMBERS</span><img src="#" alt="" /></a>
+	<a class="dock-item" id="nid4" href="horizon/contact.html"><span style="color:white">CONTACT</span><img src="#" alt="" /></a>  
+  
+        </div>
 </div>
 <!--DC Menu Dock End-->
 
--->
 
 
 
@@ -94,13 +95,108 @@ right:50%;">
 padding: 0;
 
 top: 30%;
-left:35%;"></div>
+left:35%;">
+
+                    <!--***********************************************-->
+ <div class="w3-container w3-light-grey" style="padding:128px 16px;width:550%;height:100%;margin-top:-450px;margin-left:-350px;" id="contact">
+  <h3 class="w3-center" style="width:100%;height:100%;">CONTACT</h3>
+  <p class="w3-center w3-large" style="width:100%;height:100%;">Lets get in touch. Send us a message:</p>
+  <div class="w3-row-padding" style="margin-top:64px;width:100%;height:100%;">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> VIT, VELLORE</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9761112818</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: skillhub100@gmail.com</p>
+      <br>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"style="width:100%;height:30px;"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"style="width:100%;height:30px;"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"style="width:100%;height:30px;"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"style="width:100%;height:30px;"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit" style="width:150px;height:50px;">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div>
+    <div class="w3-half" style="margin-bottom:auto;">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">SKILL-HUB</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(12.971572,79.158781);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 
 
-					<canvas id="demo-canvas" style="width:100%;height:100%;"> </canvas>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCekYz4eJVeAfEHWAcQIMC9QfLtQ8e4gJU&callback=myMap"></script>
+
+
+<!--*******************************************************-->  
+</div>
+
+
+					<canvas id="demo-canvas" style="width:170%;height:170%;"> 
+
+                    </canvas>
 
 
 				</div>
+
 
 
 
@@ -569,6 +665,7 @@ width: 180px;">
 				      <div class="evt">
 				        <div class="in">
 				          <span class="date">
+
 				            <span class="day">2016</span>
 				          </span>
 				        <h2>2016</h2>
