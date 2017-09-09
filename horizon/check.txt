@@ -1,0 +1,7 @@
+team members list updated.
+check the css file , i have put the required code for the enlargement of img on hover but it is not working ,
+check that out, the code is correct but i think it is linked with some other div element.
+new window on clicking names will have extra info.
+updation of that will be done when info is given.
+The contact.html is file is fucked up completely.
+almost everything is irrelevant there.
