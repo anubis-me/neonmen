@@ -15,12 +15,12 @@
 
 <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 		<!-- DC Dock Menu CSS -->
-		<link type="text/css" rel="stylesheet" href="cdn.dcodes.net/2/menus/dock/css/dc_dock_menu.css" />
+		<link type="text/css" rel="stylesheet" href="../cdn.dcodes.net/2/menus/dock/css/dc_dock_menu.css" />
 		<!-- jQuery Library (skip this step if already called on page ) -->
-		<script type="text/javascript" src="cdn.dcodes.net/2/jquery.min.js"></script> <!-- (do not call twice) -->
+		<script type="text/javascript" src="../cdn.dcodes.net/2/jquery.min.js"></script> <!-- (do not call twice) -->
 		<!-- DC Dock Menu JS -->
-		<script type="text/javascript" src="cdn.dcodes.net/2/menus/dock/js/fisheye-iutil.min.js"></script>
-		<script type="text/javascript" src="cdn.dcodes.net/2/menus/dock/js/dc_dock_menu.js"></script>
+		<script type="text/javascript" src="../cdn.dcodes.net/2/menus/dock/js/fisheye-iutil.min.js"></script>
+		<script type="text/javascript" src="../cdn.dcodes.net/2/menus/dock/js/dc_dock_menu.js"></script>
 
 
   	<link rel="stylesheet" href="css/style.css">
@@ -40,11 +40,29 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
-        <!--=====================================================-->
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.min.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+   <!--=========================================================-->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--========================================================-->
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+<link rel="stylesheet" href="css/dex.css" type="text/css">
+<!--==========================================-->
+<link href="css/style1.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery-1.7.1.js"></script>
+		<script src="js/3dcube.js"></script>
+
+<!--============================================================-->
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
 		<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -81,14 +99,14 @@ padding: 0;
 top: 80%;
 left:50%;
 right:50%;">
-  <div class="dock-container">
+  <!--<div class="dock-container">
   <a class="dock-item" id="nid" href="#"><span style="color:white;">ABOUT</span><img src="#" alt="" /></a>
   <a class="dock-item" id="nid1" href="#"><span style="color:white">OUR SKILLs</span><img src="#" alt="" /></a>
 	<a class="dock-item" id="nid2" href="#"><span style="color:white;">OUR Works</span><img src="#" alt="" /></a>
   <a class="dock-item" id="nid3" href="horizon/index.html"><span style="color:white">TEAM MEMBERS</span><img src="#" alt="" /></a>
 	<a class="dock-item" id="nid4" href="horizon/contact.html"><span style="color:white">CONTACT</span><img src="#" alt="" /></a>  
   
-        </div>
+        </div>-->
 </div>
 <!--DC Menu Dock End-->
 
@@ -103,39 +121,95 @@ top: 30%;
 left:35%;">
 
                     <!--***********************************************-->
-                    <h1 style="color:#fff;margin-top:-300px;text-align:center"><i>CONTACTS</i></h1>
-                    <br>
- <div class="w3-container w3-light-grey" style="padding:128px 16px;width:600%;height:100%;margin-top:-10px;margin-left:-350px;border-radius:5px" id="contact">
-  <h3 class="w3-center" style="width:100%;height:100%;margin-top:-100px">Caught a Bug ? <br> Feel free to Contact Us !</h3>
-  <p class="w3-center w3-large" style="width:100%;height:100%;background-color:burlywood; color:black;">Reach Us Now !</p>
-  <div class="w3-row-padding" style="margin-top:64px;width:100%;height:100%;">
-    <div class="w3-half">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> VIT, VELLORE</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9761112818</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: skillhub100@gmail.com</p>
-      <br>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"style="width:100%;height:30px;"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"style="width:100%;height:30px;"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"style="width:100%;height:30px;"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"style="width:100%;height:30px;"></p>
-        <p>
-          <button class="w3-button w3-black" type="submit" style="width:150px;height:50px;">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
+                    <div style="margin-top:-200px;">
+                    <h1 style="text-align:left;margin-left:-100px">Our SKILLs</h1>
+                    </div>
+                    <div style="display:block">
+                    <div style="margin-left:-390px;width:130%;float:left;">
+                    <div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding" >
+    <div class="w3-col m6">
+      <h2 style="color:#003366";>Our Skills.</h2>
+      <p>Our company constitute a team of skilled members<br>
+     That are hardworkikng and dedicated towards thew company</p>
+      <p>Our team members constitute skills <br>
+      like in field of front-end development,back-end development<br>
+	  Web designing, Photography and Photoshop</p>
     </div>
-    <div class="w3-half" style="margin-bottom:auto;">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;background-color:#00CC99"></div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-file-code-o w3-margin-right"></i>Front-end development</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-teal w3-center" style="width:90%">95%</div>
+      </div>
+	  <p class="w3-wide"><i class="fa fa-file-code-o w3-margin-right"></i>Back-end development</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-teal w3-center" style="width:90%">80%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-teal w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-teal w3-center" style="width:75%">75%</div>
+      </div>
+	  <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-teal w3-center" style="width:90%">90%</div>
+      </div>
+	  <p class="w3-wide"><i class="fa fa-group w3-margin-right"></i>Unity</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-teal w3-center" style="width:75%">70%</div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- Footer -->
-<footer style="text-align:center">
-  <div class="w3-xlarge w3-section" style="color:#fff">
+</div>
+<!--=============================================-->
+<div id="area" style="float:right;margin-bottom:1500px">
+		<div id="cube">
+			<div class="side front2"></div>
+			<div class="side front">HTML5</div>
+			<div class="side back2"></div>
+			<div class="side back">CSS3</div>
+			<div class="side bottom2"></div>
+			<div class="side bottom">MYSQL</div>
+			<div class="side top2"></div>
+			<div class="side top">AJAX</div>
+			<div class="side right2"></div>
+			<div class="side right">PHP</div>
+			<div class="side left2"></div>
+			<div class="side left">MONGODB</div>
+            <div class="corners left">
+			    <div class="cornerwrapper ftl"><div class="corner"></div></div>
+			    <div class="cornerwrapper btr"><div class="corner"></div></div>
+			    <div class="cornerwrapper fbl"><div class="corner"></div></div>
+			    <div class="cornerwrapper bbr"><div class="corner"></div></div>
+            </div>
+            <div class="corners right">
+			    <div class="cornerwrapper ftl"><div class="corner"></div></div>
+			    <div class="cornerwrapper btr"><div class="corner"></div></div>
+			    <div class="cornerwrapper fbl"><div class="corner"></div></div>
+			    <div class="cornerwrapper bbr"><div class="corner"></div></div>
+            </div>
+		</div>
+    </div>
+
+<!--==================================================-->
+<!--<div class="skill">
+<div class="container1">
+    <div class="back side"><span class='dot1'></span></div>
+    <div class="left side"><span class='dot1'></span></div>
+    <div class="right side"><span class='dot1'></span></div>
+    <div class="top side"><span class='dot1'></span></div>
+    <div class="bottom side"><span class='dot1'></span></div>
+    <div class="front side"><span class='dot1'></span></div>
+  </div>
+  </div>-->
+  <div style="position:static;">
+<footer style="text-align:center;">
+  <div class="w3-xlarge w3-section" style="color:#fff;">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -144,58 +218,17 @@ left:35%;">
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
 </footer>
- 
-<!-- Add Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(12.971572,79.158781);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+</div>
 
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-    } else {
-        mySidebar.style.display = 'block';
-    }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCekYz4eJVeAfEHWAcQIMC9QfLtQ8e4gJU&callback=myMap"></script>
+                    </div>
 
 
 <!--*******************************************************-->  
 </div>
 
 
-					<canvas id="demo-canvas" style="width:140%;height:140%;"> 
+					<canvas id="demo-canvas" style="width:120%;height:120%;"> 
 
                     </canvas>
 
@@ -783,7 +816,7 @@ width: 180px;">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-97069314-1', 'auto');
   ga('send', 'pageview');
@@ -966,8 +999,8 @@ function carousel() {
 
 
 
-<script src='cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
-<script src='cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js'></script>
+<script src='../cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+<script src='../cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js'></script>
 
 	<script src="js/index.html"></script>
 
@@ -983,3 +1016,5 @@ function carousel() {
 
 <!-- Mirrored from www.istevitu.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2017 07:11:28 GMT -->
 </html>
+
+
