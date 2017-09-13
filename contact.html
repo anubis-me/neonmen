@@ -12,14 +12,14 @@
 		<script type="text/javascript" src="dcodes/menus/dock/js/fisheye-iutil.min.html"></script>
 		<script type="text/javascript" src="dcodes/menus/dock/js/dc_dock_menu.html"></script>
 
-		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 		<!-- DC Dock Menu CSS -->
 		<link type="text/css" rel="stylesheet" href="cdn.dcodes.net/2/menus/dock/css/dc_dock_menu.css" />
 		<!-- jQuery Library (skip this step if already called on page ) -->
 		<script type="text/javascript" src="cdn.dcodes.net/2/jquery.min.js"></script> <!-- (do not call twice) -->
 		<!-- DC Dock Menu JS -->
-	
-		
+		<script type="text/javascript" src="cdn.dcodes.net/2/menus/dock/js/fisheye-iutil.min.js"></script>
+		<script type="text/javascript" src="cdn.dcodes.net/2/menus/dock/js/dc_dock_menu.js"></script>
 
 
   	<link rel="stylesheet" href="css/style.css">
@@ -39,17 +39,16 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+        <link href="css/contact_.css" type="text/css" rel="stylesheet">
         <!--=====================================================-->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--========================================================-->
 		<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
-	
-
 	<body>
 
 		<div class="container demo-1">
@@ -57,106 +56,96 @@
 
 				<div id="large-header" class="large-header">
 
-<div  style="position: absolute;margin: 0;padding: 0;top: 30%;left:35%;">
-
-         <h1 style="color:#fff;margin-top:-300px;text-align:center"><i>CONTACTS</i></h1>
-            <br>
-		 <div class="w3-container w3-light-grey" style="padding:128px 16px;width:600%;height:100%;margin-top:-10px;margin-left:-350px;borde-radius:5px" id="contact">
-		  <h3 class="w3-center" style="width:100%;height:100%;margin-top:-100px">Caught a Bug ? <br> Feel free to Contact Us !</h3>
-		  <p class="w3-center w3-large" style="width:100%;height:100%;background-color:burlywood; color:black;">Reach Us Now !</p>
-		  <div class="w3-row-padding" style="margin-top:64px;width:100%;height:100%;">
-		    <div class="w3-half">
-		      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> VIT, VELLORE</p>
-		      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9761112818</p>
-		      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: skillhub100@gmail.com</p>
-		      <br>
-		      <form action="/action_page.php" target="_blank">
-		        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"style="width:100%;height:30px;"></p>
-		        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"style="width:100%;height:30px;"></p>
-		        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"style="width:100%;height:30px;"></p>
-		        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"style="width:100%;height:30px;"></p>
-		        <p>
-		          <button class="w3-button w3-black" type="submit" style="width:150px;height:50px;">
-		            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-		          </button>
-		        </p>
-		      </form>
-		    </div>
-		    <div class="w3-half" style="margin-bottom:auto;">
-		      <!-- Add Google Maps -->
-		      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;background-color:#00CC99"></div>
-		    </div>
-		  </div>
-		</div>
-
-		<!-- Footer -->
-		<footer style="text-align:center">
-		  <div class="w3-xlarge w3-section" style="color:#fff">
-		    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-		    <i class="fa fa-instagram w3-hover-opacity"></i>
-		    <i class="fa fa-snapchat w3-hover-opacity"></i>
-		    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-		    <i class="fa fa-twitter w3-hover-opacity"></i>
-		    <i class="fa fa-linkedin w3-hover-opacity"></i>
-		  </div>
-		</footer>
-		 
-		<!-- Add Google Maps -->
-		<script>
-		function myMap()
-		{
-		  myCenter=new google.maps.LatLng(12.971572,79.158781);
-		  var mapOptions= {
-		    center:myCenter,
-		    zoom:12, scrollwheel: false, draggable: false,
-		    mapTypeId:google.maps.MapTypeId.ROADMAP
-		  };
-		  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-		  var marker = new google.maps.Marker({
-		    position: myCenter,
-		  });
-		  marker.setMap(map);
-		}
-
-		// Modal Image Gallery
-		function onClick(element) {
-		  document.getElementById("img01").src = element.src;
-		  document.getElementById("modal01").style.display = "block";
-		  var captionText = document.getElementById("caption");
-		  captionText.innerHTML = element.alt;
-		}
+					<!-- DC Menu Dock Settings: horizontal style -->
+<script type="text/javascript">
+    $(function () {
+    // Dock initialize
+    $('#dock').Fisheye({
+        maxWidth: 40,
+        items: 'a',
+        itemsText: 'span',
+        container: '.dock-container',
+        itemWidth: 70,
+        proximity: 100,
+        alignment: 'left',
+        valign: 'bottom',
+        halign: 'center'
+    });
+});
+</script>
+<!-- DC Menu Dock Start -->
+<div id="dock" class="dc_dockmenu" style="position: absolute;margin: 0;
+padding: 0;
 
 
-		// Toggle between showing and hiding the sidebar when clicking the menu icon
-		var mySidebar = document.getElementById("mySidebar");
+top: 80%;
+left:50%;
+right:50%;">
+  <div class="dock-container">
+  <a class="dock-item" id="nid" href="#"><span style="color:white;">ABOUT</span><img src="#" alt="" /></a>
+  <a class="dock-item" id="nid1" href="#"><span style="color:white">OUR SKILLs</span><img src="#" alt="" /></a>
+	<a class="dock-item" id="nid2" href="#"><span style="color:white;">OUR Works</span><img src="#" alt="" /></a>
+  <a class="dock-item" id="nid3" href="horizon/index.html"><span style="color:white">TEAM MEMBERS</span><img src="#" alt="" /></a>
+	<a class="dock-item" id="nid4" href="horizon/contact.html"><span style="color:white">CONTACT</span><img src="#" alt="" /></a>  
+  
+        </div>
+</div>
+<!--DC Menu Dock End-->
 
-		function w3_open() {
-		    if (mySidebar.style.display === 'block') {
-		        mySidebar.style.display = 'none';
-		    } else {
-		        mySidebar.style.display = 'block';
-		    }
-		}
 
-		// Close the sidebar with the close button
-		function w3_close() {
-		    mySidebar.style.display = "none";
-		}
-		</script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCekYz4eJVeAfEHWAcQIMC9QfLtQ8e4gJU&callback=myMap"></script>
 
+
+<link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+<div  style="position: absolute;margin: 0;
+padding: 0;
+
+top: 30%;
+left:35%;">
+
+                    <!--***********************************************-->
+                    <div class="envelope" align="left">
+	<div class="contact_form">
+		<span class="reset">x</span>
+		<form name="contact" action="POST" id="say_hi">
+                <fieldset>
+
+                  <section class="form_part">
+                  <label for="name" id="name_label">Name</label>
+                  <input type="text" name="name" id="name" size="30" value="" class="text-input" style="width:50%" />
+                  
+                  </section>
+
+				  <section class="form_part">	
+                  <label for="email" id="email_label">Email</label>
+                  <input type="text" name="email" id="email" size="30" value="" class="text-input" style="width:50%"/>
+                  
+				  </section>
+
+				  <section class="form_part">	
+                  <label for="message" id="message_label">Message</label>
+                  <textarea class="message" name="message" id="message"></textarea>
+                 
+                  </section>
+                 
+              </fieldset>
+          </form>
+	</div>
+	<p class="contact_me">CONTACT</p>
+	<p class="send_me">SEND</p>
+	<p class="thanks">THANKS</p>
+	<span class="top_flap close_sesame"></span>
+	<span class="side_flaps"></span>
+	<span class="bottom_flap"></span>
+    </div>
 
 <!--*******************************************************-->  
 </div>
 
 
-					<canvas id="demo-canvas" style="width:140%;height:140%;"> 
+	     	<canvas id="demo-canvas" style="width:140%;height:140%;"> 
 
-                    </canvas>
-
-
-				</div>
+             </canvas>
+		</div>
 
 
 
@@ -175,6 +164,7 @@
 	<script src="js/index.html"></script>
 
 	    <script src="js/machine.js"></script>
+        <script src="js/contact.js" type="text/javascript"></script>
 
 		<script src="js/TweenLite.min.js"></script>
 		<script src="js/EasePack.min.js"></script>
