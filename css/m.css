@@ -1,0 +1,711 @@
+.bgCircles .circles {
+            border: 3px solid #c0c0c0;
+            border-radius: 50%;
+            width: 214px;
+            height: 214px;
+        }
+        .circles {
+            position: absolute;
+            font-family: Impact, Charcoal, sans-serif;
+            text-shadow: -2px 2px 2px #000;
+        }
+        .circles1 {
+            left: 0;
+            top: 0
+        }
+        .circles2 {
+            right: 0;
+            top: 0
+        }
+        .circles3 {
+            left: 50%;
+            bottom: 0;
+            margin-left: -104px
+        }
+        .inner-feild {
+            width: 214px;
+            height: 214px;
+            position: relative;
+            animation: 10s linear 0s normal none infinite rotater;
+            -webkit-animation: 10s linear 0s normal none infinite rotater
+        }
+        .circles1 .inner-box {
+            left: 0;
+            top: 0;
+            margin-left: -65px;
+            background: #1e5799; /* Old browsers */
+            background: -moz-linear-gradient(top, #1e5799 0%, #10ab85 0%, #064334 100%, #064334 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#10ab85), color-stop(100%,#064334), color-stop(100%,#064334)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #1e5799 0%,#10ab85 0%,#064334 100%,#064334 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #1e5799 0%,#10ab85 0%,#064334 100%,#064334 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #1e5799 0%,#10ab85 0%,#064334 100%,#064334 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #1e5799 0%,#10ab85 0%,#064334 100%,#064334 100%); /* W3C */
+        }
+        .circles2 .inner-box {
+            right: 0;
+            top: 0;
+            margin-right: -65px;
+            background: #1e5799; /* Old browsers */
+            background: -moz-linear-gradient(top, #1e5799 0%, #ed9000 0%, #b13600 100%, #b13600 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#ed9000), color-stop(100%,#b13600), color-stop(100%,#b13600)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #1e5799 0%,#ed9000 0%,#b13600 100%,#b13600 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #1e5799 0%,#ed9000 0%,#b13600 100%,#b13600 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #1e5799 0%,#ed9000 0%,#b13600 100%,#b13600 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #1e5799 0%,#ed9000 0%,#b13600 100%,#b13600 100%); /* W3C */
+        }
+        .circles3 .inner-box {
+            left: 50%;
+            bottom: 0;
+            margin-left: -65px;
+            margin-bottom: -65px;
+            background: #1e5799; /* Old browsers */
+            background: -moz-linear-gradient(top, #1e5799 0%, #e52641 0%, #5a0f19 100%, #5a0f19 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#e52641), color-stop(100%,#5a0f19), color-stop(100%,#5a0f19)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #1e5799 0%,#e52641 0%,#5a0f19 100%,#5a0f19 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #1e5799 0%,#e52641 0%,#5a0f19 100%,#5a0f19 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #1e5799 0%,#e52641 0%,#5a0f19 100%,#5a0f19 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #1e5799 0%,#e52641 0%,#5a0f19 100%,#5a0f19 100%); /* W3C */
+        }
+        .inner-box {
+            height: 130px;
+            width: 130px;
+            line-height: 130px;
+            text-align: center;
+            color: #fff;
+            font-size: 25px;
+            position: absolute;
+            background: red;
+            border-radius: 50%;
+            animation: 10s linear 0s normal none infinite rotater-img;
+            -webkit-animation: 10s linear 0s normal none infinite rotater-img;
+        }
+        .animation-outer {
+            position: relative;
+            width: 318px;
+            margin: 100px auto;
+            height: 288px
+        }
+        @-moz-keyframes rotater-img
+        {
+           0%   {-moz-transform:rotate(360deg)}
+           100% {-moz-transform:rotate(0deg)}
+        }
+        @-moz-keyframes rotater
+        {
+           0%   {-moz-transform:rotate(0deg); }
+           100% {-moz-transform:rotate(360deg)}
+        }
+        @-o-keyframes rotater-img
+        {
+           0%   {-o-transform:rotate(360deg)}
+           100% {-o-transform:rotate(0deg)}
+        }
+        @-o-keyframes rotater
+        {
+           0%   {-o-transform:rotate(0deg); }
+           100% {-o-transform:rotate(360deg)}
+        }
+        @-webkit-keyframes rotater-img
+        {
+           0%   {-webkit-transform:rotate(360deg)}
+           100% {-webkit-transform:rotate(0deg)}
+        }
+        @-webkit-keyframes rotater
+        {
+           0%   {-webkit-transform:rotate(0deg); }
+           100% {-webkit-transform:rotate(360deg)}
+        }
+<!--================================================-->
+#boxWrapper{
+    width:700px;
+    height:300px;
+}
+
+.box{
+    width:80px;
+    height:80px;
+    background-color:black;
+    margin:10px;
+    display:inline-block;
+    font-size:60px;
+    line-height:80px;
+    color:white;
+    text-align:center;
+    -webkit-font-smoothing:antialiased;
+    -webkit-transform:translateZ(0.1px);
+    -moz-transform:translateZ(0.1px);
+    -o-transform:translateZ(0.1px);
+    -ms-transform:translateZ(0.1px);
+    transform:translateZ(0.1px);
+}
+
+.animated {
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes introAnimation {
+     0% {
+        -webkit-transform: scale(0) rotate(-180deg) ;            
+        opacity: 0;            
+    }
+    
+    50% {
+        -webkit-transform: scale(1) rotate(0deg) ;   
+        opacity: 1;
+    }
+
+    70% {
+        -webkit-transform: scale(1) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: scale(0.8) rotate(0deg);
+    }
+}
+
+@-moz-keyframes introAnimation {
+    0% {
+        -moz-transform: scale(0) rotate(-180deg);         
+        opacity: 0;            
+    }
+    
+    50% {
+        -moz-transform: scale(1) rotate(0deg);                    
+        opacity: 1;
+    }
+
+    70%{
+         -moz-transform: scale(1) rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: scale(0.8) rotate(0deg); 
+    }
+}
+@-o-keyframes introAnimation {
+    0% {
+        -o-transform: scale(0) rotate(-180deg);         
+        opacity: 0;            
+    }
+    
+    50% {
+        -o-transform: scale(1) rotate(0deg);                    
+        opacity: 1;
+    }
+
+    70%{
+         -o-transform: scale(1) rotate(0deg);
+    }
+
+    100% {
+        -o-transform: scale(0.8) rotate(0deg); 
+    }
+}
+
+@keyframes introAnimation {
+    00% {
+        transform: scale(0) rotate(-180deg);         
+        opacity: 0;            
+    }
+    
+    50% {
+        transform: scale(1) rotate(0deg);                    
+        opacity: 1;
+    }
+
+    70%{
+         transform: scale(1) rotate(0deg);
+    }
+
+    100% {
+        transform: scale(0.8) rotate(0deg); 
+    }
+}
+
+.introAnimation {
+    -webkit-backface-visibility: visible !important;
+    -webkit-animation-name: introAnimation;
+    -moz-backface-visibility: visible !important;
+    -moz-animation-name: introAnimation;
+    -o-backface-visibility: visible !important;
+    -o-animation-name: introAnimation;
+    backface-visibility: visible !important;
+    animation-name: introAnimation;
+}
+
+.two {
+    -webkit-animation-delay: 0.3s;
+       -moz-animation-delay: 0.3s;
+        -ms-animation-delay: 0.3s;
+         -o-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+}
+
+.three {
+    -webkit-animation-delay: 0.6s;
+       -moz-animation-delay: 0.6s;
+        -ms-animation-delay: 0.6s;
+         -o-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+}
+
+.four {
+    -webkit-animation-delay: 0.9s;
+       -moz-animation-delay: 0.9s;
+        -ms-animation-delay: 0.9s;
+         -o-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+}
+
+.five {
+    -webkit-animation-delay: 1.2s;
+       -moz-animation-delay: 1.2s;
+        -ms-animation-delay: 1.2s;
+         -o-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+}
+
+.six {
+    -webkit-animation-delay: 1.5s;
+       -moz-animation-delay: 1.5s;
+        -ms-animation-delay: 1.5s;
+         -o-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+}
+
+.seven {
+    -webkit-animation-delay: 1.8s;
+       -moz-animation-delay: 1.8s;
+        -ms-animation-delay: 1.8s;
+         -o-animation-delay: 1.8s;
+            animation-delay: 1.8s;
+}
+
+.eight {
+    -webkit-animation-delay: 2.1s;
+       -moz-animation-delay: 2.1s;
+        -ms-animation-delay: 2.1s;
+         -o-animation-delay: 2.1s;
+            animation-delay: 2.1s;
+}
+
+.nine {
+    -webkit-animation-delay: 2.4s;
+       -moz-animation-delay: 2.4s;
+        -ms-animation-delay: 2.4s;
+         -o-animation-delay: 2.4s;
+            animation-delay: 2.4s;
+}
+.ten {
+    -webkit-animation-delay: 2.7s;
+       -moz-animation-delay: 2.7s;
+        -ms-animation-delay: 2.7s;
+         -o-animation-delay: 2.7s;
+            animation-delay: 2.7s;
+}
+.eleven {
+    -webkit-animation-delay: 3.0s;
+       -moz-animation-delay: 3.0s;
+        -ms-animation-delay: 3.0s;
+         -o-animation-delay: 3.0s;
+            animation-delay: 3.0s;
+}
+.twelve {
+    -webkit-animation-delay: 3.3s;
+       -moz-animation-delay: 3.3s;
+        -ms-animation-delay: 3.3s;
+         -o-animation-delay: 3.3s;
+            animation-delay: 3.3s;
+}
+<!--=============================================-->
+<!-- 3rd----------------------------------------->
+.view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-perspective: 400;
+          perspective: 400;
+}
+
+.plane {
+  width: 120px;
+  height: 120px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.plane.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transform: rotateX(60deg) rotateZ(-30deg);
+          transform: rotateX(60deg) rotateZ(-30deg);
+  -webkit-animation: rotate 20s infinite linear;
+          animation: rotate 20s infinite linear;
+}
+.plane.main .circle {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  border-radius: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 60px crimson, inset 0 0 60px crimson;
+}
+.plane.main .circle::before, .plane.main .circle::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 10%;
+  height: 10%;
+  border-radius: 100%;
+  background: crimson;
+  box-sizing: border-box;
+  box-shadow: 0 0 60px 2px crimson;
+}
+.plane.main .circle::before {
+  -webkit-transform: translateZ(-90px);
+          transform: translateZ(-90px);
+}
+.plane.main .circle::after {
+  -webkit-transform: translateZ(90px);
+          transform: translateZ(90px);
+}
+.plane.main .circle:nth-child(1) {
+  -webkit-transform: rotateZ(72deg) rotateX(63.435deg);
+          transform: rotateZ(72deg) rotateX(63.435deg);
+}
+.plane.main .circle:nth-child(2) {
+  -webkit-transform: rotateZ(144deg) rotateX(63.435deg);
+          transform: rotateZ(144deg) rotateX(63.435deg);
+}
+.plane.main .circle:nth-child(3) {
+  -webkit-transform: rotateZ(216deg) rotateX(63.435deg);
+          transform: rotateZ(216deg) rotateX(63.435deg);
+}
+.plane.main .circle:nth-child(4) {
+  -webkit-transform: rotateZ(288deg) rotateX(63.435deg);
+          transform: rotateZ(288deg) rotateX(63.435deg);
+}
+.plane.main .circle:nth-child(5) {
+  -webkit-transform: rotateZ(360deg) rotateX(63.435deg);
+          transform: rotateZ(360deg) rotateX(63.435deg);
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+            transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+            transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+<!--=====================================================-->
+
+@keyframes spinsun {
+  0% { transform: rotate(0); }
+  100%   { transform: rotate(-360deg); }
+}
+@keyframes shadow {
+  0% { background-position: 130% 0%; }
+  33%{ background-position: 50% 0%; }
+  55% { background-position: 0% 0%; }
+  80%{ background-position: -50% 0%; }
+  100%{ background-position: -50% 0%; }
+}
+@keyframes orbitmercury {
+  0% { z-index:2; transform: rotateY(0); }
+  49% { z-index:2; }
+  50% { z-index:-2; }
+  99% { z-index:-2; }
+  100%   { z-index:2; transform: rotateY(360deg); }
+}
+@keyframes orbitvenus {
+  0% { z-index:3; transform: rotateY(0); }
+  49% { z-index:3; }
+  50% { z-index:-3; }
+  99% { z-index:-3; }
+  100%   { z-index:3; transform: rotateY(360deg); }
+}
+@keyframes orbitearth {
+  0% { z-index:4; transform: rotateY(0); }
+  49% {z-index:4;}
+  50% {z-index:-4;}
+  99% {z-index:-4;}
+  100%   { z-index:4; transform: rotateY(360deg);}
+}
+@keyframes orbitmars {
+  0% { z-index:5; transform: rotateY(0); }
+  49% { z-index:5; }
+  50% { z-index:-5; }
+  99% { z-index:-5; }
+  100%   { z-index:5; transform: rotateY(360deg); }
+}
+@keyframes orbitjupiter {
+  0% { z-index:6; transform: rotateY(270); }
+  49% { z-index:6; }
+  50% { z-index:-6; }
+  99% { z-index:-6; }
+  100%   { z-index:6; transform: rotateY(360deg); }
+}
+@keyframes orbitsaturn {
+  0% { z-index:7; transform: rotateY(270); }
+  49% { z-index:7; }
+  50% { z-index:-7; }
+  99% { z-index:-7; }
+  100%   { z-index:7; transform: rotateY(360deg); }
+}
+/* Keep planet image flat */
+@keyframes anti-spin {
+  from { transform: rotateY(0); }
+  to   { transform: rotateY(-360deg); }
+}
+@keyframes anti-spin-rings {
+  from { transform: rotateY(0) rotateX(73deg); }
+  to   { transform: rotateY(-360deg) rotateX(73deg); }
+}
+
+/* scene wrapper */
+.wrapper{
+  position:relative;
+  margin: 0 auto;
+  display:block;
+  margin-top: 200px;
+  perspective: 1000px;
+	perspective-origin: 60% 50%;
+  transform: rotate(-10deg);
+  
+}
+.wrapper > div {
+  position: relative;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  height: 0px;
+}
+.sun {
+  width: 250px;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  height: 125px !important;
+}
+.sun .star {
+  width: 250px;
+  height: 250px;
+  background: url(http://www.waynedunkley.com/img/solar_system/sun.png) no-repeat;
+  background-size: cover;
+  border-radius: 250px;
+  margin: 0 auto;
+  animation: spinsun 40s infinite linear;
+}
+.planet {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  animation-iteration-count: infinite;
+  overflow:hidden;
+}
+.shadow {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: transparent url(http://www.waynedunkley.com/img/solar_system/shadow.png) 0% 0% no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+}
+.mercury {
+  position: absolute;
+  width: 400px;
+  z-index:2;
+  animation: orbitmercury 12s infinite linear;
+  top: -7.5px; /*half of planets height to keep orbits in line*/
+}
+.mercury .planet {
+  width:15px;
+  height:15px;
+  background-image: url(http://www.waynedunkley.com/img/solar_system/mercury.png);
+  animation: anti-spin 12s infinite linear;
+}
+.mercury .shadow {
+  animation: shadow 12s infinite linear;
+}
+.venus {
+  position: absolute;
+  width: 506px;
+  z-index:3;
+  animation: orbitvenus 15s infinite linear;
+  top: -19px;
+}
+.venus .planet {
+  width:38px;
+  height:38px;
+  background-image: url(http://www.waynedunkley.com/img/solar_system/venus.png);
+  animation: anti-spin 15s infinite linear;
+}
+.venus .shadow {
+  animation: shadow 15s infinite linear;
+}
+.earth {
+  position: absolute;
+  width: 610px;
+  z-index:4;
+  animation: orbitearth 20s infinite linear;
+  top: -20px;
+}
+.earth .planet {
+  width:40px;
+  height:40px;
+  background-image: url(http://www.waynedunkley.com/img/solar_system/earth.png?v=2);
+  animation: anti-spin 20s infinite linear;
+}
+.earth .shadow {
+  animation: shadow 20s infinite linear;
+}
+.mars {
+  position: absolute;
+  width: 706px;
+  z-index:5;
+  animation: orbitmars 30s infinite linear;
+  top: -11px;
+}
+.mars .planet {
+  width:22px;
+  height:22px;
+  background-image: url(http://www.waynedunkley.com/img/solar_system/mars.png);
+  animation: anti-spin 30s infinite linear;
+}
+.mars .shadow {
+  animation: shadow 30s infinite linear;
+}
+.jupiter {
+  position: absolute;
+  width: 1100px;
+  z-index:6;
+  animation: orbitjupiter 50s infinite linear;
+  top: -64px;
+}
+.jupiter .planet {
+  width:128px;
+  height:128px;
+  background-image: url(http://www.waynedunkley.com/img/solar_system/jupiter.png);
+  animation: anti-spin 50s infinite linear;
+}
+.jupiter .shadow {
+  animation: shadow 50s infinite linear;
+}
+<!----------------------WEBBERN>
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+.wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.split {
+  position: relative;
+  perspective: 500px;
+  top: 50%;
+  padding: 0 20px;
+  transform: translateY(-50%);
+  font-weight: 300;
+}
+.split span {
+  opacity: 0;
+}
+<!----------------------------------------->
+
+
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+svg {
+  padding: 5vw;
+  width: 90vw;
+}
+
+svg > * {
+  fill: #1C1C1C;
+  stroke: #1C1C1C;
+  stroke-width: 0.85px;
+}
+
+/* hover tip */
+body:hover:after {
+  content: "Hover to Slow Motion";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1vh;
+  color: #1C1C1C;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font: 700 9px/14px Tahoma, sans-serif;
+  -moz-animation: tip 2.5s forwards;
+  -webkit-animation: tip 2.5s forwards;
+  animation: tip 2.5s forwards;
+}
+
+@-moz-keyframes tip {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 80% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes tip {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 80% {
+    opacity: 1;
+  }
+}
+@keyframes tip {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 80% {
+    opacity: 1;
+  }
+}

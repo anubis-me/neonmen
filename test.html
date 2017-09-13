@@ -1,0 +1,527 @@
+<html>
+<head>
+</head>
+<style>
+body {
+  background-color: #464646;
+}
+
+.blank, .ball {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  border-radius: 50%;
+}
+
+.blank {
+  background-color: #F5F5F5;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.55);
+}
+
+.ball {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 10s ease;
+  transition: 10s ease;
+  -webkit-animation: rotate 10s linear infinite;
+          animation: rotate 10s linear infinite;
+}
+
+.rings {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.rings .spikes {
+  width: 1px;
+  height: 10px;
+  background-color: none;
+  position: absolute;
+  -webkit-transform-origin: center 100px;
+          transform-origin: center 100px;
+  border-radius: 50%;
+  margin-left: 50%;
+}
+
+.rings.x {
+  border: 1px solid #6AC5C5;
+}
+.rings.x .spikes {
+  -webkit-animation: spikeBlue 10s cubic-bezier(0.61, 0.01, 0.77, 1) infinite;
+          animation: spikeBlue 10s cubic-bezier(0.61, 0.01, 0.77, 1) infinite;
+}
+
+.rings.y {
+  border: 1px solid #E79191;
+}
+.rings.y .spikes {
+  -webkit-animation: spikeRed 10s cubic-bezier(0.61, 0.01, 0.77, 1) infinite;
+          animation: spikeRed 10s cubic-bezier(0.61, 0.01, 0.77, 1) infinite;
+}
+
+.rings.x:nth-child(1) {
+  -webkit-transform: rotateX(36deg);
+          transform: rotateX(36deg);
+}
+
+.rings.x:nth-child(2) {
+  -webkit-transform: rotateX(72deg);
+          transform: rotateX(72deg);
+}
+
+.rings.x:nth-child(3) {
+  -webkit-transform: rotateX(108deg);
+          transform: rotateX(108deg);
+}
+
+.rings.x:nth-child(4) {
+  -webkit-transform: rotateX(144deg);
+          transform: rotateX(144deg);
+}
+
+.rings.x:nth-child(5) {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.rings.x:nth-child(6) {
+  -webkit-transform: rotateX(216deg);
+          transform: rotateX(216deg);
+}
+
+.rings.x:nth-child(7) {
+  -webkit-transform: rotateX(252deg);
+          transform: rotateX(252deg);
+}
+
+.rings.x:nth-child(8) {
+  -webkit-transform: rotateX(288deg);
+          transform: rotateX(288deg);
+}
+
+.rings.x:nth-child(9) {
+  -webkit-transform: rotateX(324deg);
+          transform: rotateX(324deg);
+}
+
+.rings.x:nth-child(10) {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+}
+
+.rings.y:nth-child(10) {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.rings.y:nth-child(11) {
+  -webkit-transform: rotateY(396deg);
+          transform: rotateY(396deg);
+}
+
+.rings.y:nth-child(12) {
+  -webkit-transform: rotateY(432deg);
+          transform: rotateY(432deg);
+}
+
+.rings.y:nth-child(13) {
+  -webkit-transform: rotateY(468deg);
+          transform: rotateY(468deg);
+}
+
+.rings.y:nth-child(14) {
+  -webkit-transform: rotateY(504deg);
+          transform: rotateY(504deg);
+}
+
+.rings.y:nth-child(15) {
+  -webkit-transform: rotateY(540deg);
+          transform: rotateY(540deg);
+}
+
+.rings.y:nth-child(16) {
+  -webkit-transform: rotateY(576deg);
+          transform: rotateY(576deg);
+}
+
+.rings.y:nth-child(17) {
+  -webkit-transform: rotateY(612deg);
+          transform: rotateY(612deg);
+}
+
+.rings.y:nth-child(18) {
+  -webkit-transform: rotateY(648deg);
+          transform: rotateY(648deg);
+}
+
+.rings.y:nth-child(19) {
+  -webkit-transform: rotateY(684deg);
+          transform: rotateY(684deg);
+}
+
+.rings.y:nth-child(20) {
+  -webkit-transform: rotateY(720deg);
+          transform: rotateY(720deg);
+}
+
+.spikes:nth-child(1) {
+  -webkit-transform: rotate(36deg);
+          transform: rotate(36deg);
+}
+
+.spikes:nth-child(2) {
+  -webkit-transform: rotate(72deg);
+          transform: rotate(72deg);
+}
+
+.spikes:nth-child(3) {
+  -webkit-transform: rotate(108deg);
+          transform: rotate(108deg);
+}
+
+.spikes:nth-child(4) {
+  -webkit-transform: rotate(144deg);
+          transform: rotate(144deg);
+}
+
+.spikes:nth-child(5) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.spikes:nth-child(6) {
+  -webkit-transform: rotate(216deg);
+          transform: rotate(216deg);
+}
+
+.spikes:nth-child(7) {
+  -webkit-transform: rotate(252deg);
+          transform: rotate(252deg);
+}
+
+.spikes:nth-child(8) {
+  -webkit-transform: rotate(288deg);
+          transform: rotate(288deg);
+}
+
+.spikes:nth-child(9) {
+  -webkit-transform: rotate(324deg);
+          transform: rotate(324deg);
+}
+
+.spikes:nth-child(10) {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotateX(360deg) rotateY(720deg);
+            transform: rotateX(360deg) rotateY(720deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotateX(360deg) rotateY(720deg);
+            transform: rotateX(360deg) rotateY(720deg);
+  }
+}
+@-webkit-keyframes spikeBlue {
+  0% {
+    box-shadow: 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 0 -90px 0 #6AC5C5;
+  }
+  100% {
+    box-shadow: 0 0 0 transparent;
+  }
+}
+@keyframes spikeBlue {
+  0% {
+    box-shadow: 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 0 -90px 0 #6AC5C5;
+  }
+  100% {
+    box-shadow: 0 0 0 transparent;
+  }
+}
+@-webkit-keyframes spikeRed {
+  0% {
+    box-shadow: 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 0 -80px 0 #E79191;
+  }
+  100% {
+    box-shadow: 0 0 0 transparent;
+  }
+}
+@keyframes spikeRed {
+  0% {
+    box-shadow: 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 0 -80px 0 #E79191;
+  }
+  100% {
+    box-shadow: 0 0 0 transparent;
+  }
+}
+</style>
+<body>
+<div class='blank'>
+  <div class='ball'>
+    <div class='rings x'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings x'>
+      <div class='spikes'>html</div>
+      <div class='spikes'>css</div>
+      <div class='spikes'>js</div>
+      <div class='spikes'>mongodb</div>
+      <div class='spikes'>pyhon</div>
+      <div class='spikes'>mysql</div>
+      <div class='spikes'>php</div>
+      <div class='spikes'>java</div>
+      <div class='spikes'>sass</div>
+      <div class='spikes'>c</div>
+    </div>
+    <div class='rings x'>
+      <div class='spikes'>c++</div>
+      <div class='spikes'>hi</div>
+      <div class='spikes'>my</div>
+      <div class='spikes'>name</div>
+      <div class='spikes'>is</div>
+      <div class='spikes'>vaibhav</div>
+      <div class='spikes'>bansa</div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings x'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings x'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings x'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings x'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings x'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings x'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings x'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings y'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings y'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings y'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings y'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings y'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings y'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings y'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings y'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings y'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+    <div class='rings y'>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+      <div class='spikes'></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<!-- /change the numbers -->
