@@ -11,7 +11,7 @@
   "display": "fullscreen",
   "icons": [
     {
-      "src":"img/teacher.png",
+      "src":"teacher.png",
       "sizes": "192x192",
       "type": "image/png"
     }
