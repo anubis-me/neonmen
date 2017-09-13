@@ -3,11 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="68b34e46-181f-4422-92c6-e0ecff0d9262" name="Default" comment="">
 <<<<<<< HEAD
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manifest.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CNAME" afterPath="$PROJECT_DIR$/CNAME" />
 =======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team.html" afterPath="$PROJECT_DIR$/team.html" />
 >>>>>>> 69ef4efd8a655abc3229da0afc653c90f03220b8
+>>>>>>> ed90f946b1347349eb138f182a1ac991e1fe6d9c
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,10 +38,14 @@
         </entry>
       </file>
 <<<<<<< HEAD
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+=======
+<<<<<<< HEAD
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://C:/My Web Sites/portfolio/jacekjeznach.com/wp-content/themes/jj/js/main.js">
 =======
       <file leaf-file-name="contact.html" pinned="false" current-in-tab="true">
+>>>>>>> ed90f946b1347349eb138f182a1ac991e1fe6d9c
         <entry file="file://$PROJECT_DIR$/contact.html">
 >>>>>>> 69ef4efd8a655abc3229da0afc653c90f03220b8
           <provider selected="true" editor-type-id="text-editor">
@@ -48,10 +57,30 @@
         </entry>
       </file>
 <<<<<<< HEAD
+      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/manifest.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/about.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+=======
+<<<<<<< HEAD
       <file leaf-file-name="CNAME" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CNAME">
           <provider selected="true" editor-type-id="text-editor">
 =======
+>>>>>>> ed90f946b1347349eb138f182a1ac991e1fe6d9c
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://C:/My Web Sites/portfolio/jacekjeznach.com/wp-content/themes/jj/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,7 +96,7 @@
           <provider selected="true" editor-type-id="text-editor">
 >>>>>>> 69ef4efd8a655abc3229da0afc653c90f03220b8
             <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,7 +156,11 @@
 =======
         <option value="$PROJECT_DIR$/team.html" />
         <option value="$PROJECT_DIR$/contact.html" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/manifest.json" />
+=======
 >>>>>>> 69ef4efd8a655abc3229da0afc653c90f03220b8
+>>>>>>> ed90f946b1347349eb138f182a1ac991e1fe6d9c
       </list>
     </option>
   </component>
@@ -158,6 +191,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,24 +204,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neonmen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neonmen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Team" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,6 +265,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -281,19 +306,28 @@
       <updated>1504985443079</updated>
       <workItem from="1504985444900" duration="2273000" />
 <<<<<<< HEAD
+      <workItem from="1505138749753" duration="2744000" />
+      <workItem from="1505319662009" duration="875000" />
+=======
+<<<<<<< HEAD
       <workItem from="1505138749753" duration="1940000" />
 =======
       <workItem from="1505138749753" duration="2618000" />
 >>>>>>> 69ef4efd8a655abc3229da0afc653c90f03220b8
+>>>>>>> ed90f946b1347349eb138f182a1ac991e1fe6d9c
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+    <option name="totallyTimeSpent" value="5892000" />
+=======
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="4213000" />
 =======
     <option name="totallyTimeSpent" value="4891000" />
 >>>>>>> 69ef4efd8a655abc3229da0afc653c90f03220b8
+>>>>>>> ed90f946b1347349eb138f182a1ac991e1fe6d9c
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="10" width="1350" height="744" extended-state="0" />
@@ -336,6 +370,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/My Web Sites/portfolio/jacekjeznach.com/wp-content/themes/jj/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/team.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="11" lean-forward="false" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/uevents.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/timeline.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/teacher.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -344,22 +417,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2839">
-          <caret line="167" column="86" lean-forward="false" selection-start-line="167" selection-start-column="86" selection-end-line="167" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-687">
-          <caret line="167" column="86" lean-forward="false" selection-start-line="167" selection-start-column="86" selection-end-line="167" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/index.html">
+=======
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -372,6 +432,7 @@
 =======
 >>>>>>> 69ef4efd8a655abc3229da0afc653c90f03220b8
     <entry file="file://$PROJECT_DIR$/www.google-analytics.com/analytics.js">
+>>>>>>> ed90f946b1347349eb138f182a1ac991e1fe6d9c
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -379,7 +440,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.html">
+    <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -387,6 +448,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2839">
+          <caret line="167" column="86" lean-forward="false" selection-start-line="167" selection-start-column="86" selection-end-line="167" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-687">
+          <caret line="167" column="86" lean-forward="false" selection-start-line="167" selection-start-column="86" selection-end-line="167" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www.google-analytics.com/analytics.js" />
+    <entry file="file://$PROJECT_DIR$/js/index.html" />
     <entry file="file://$PROJECT_DIR$/img/uevents.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -421,7 +498,7 @@
     <entry file="file://$PROJECT_DIR$/CNAME">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -444,6 +521,22 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/img/about.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+=======
 >>>>>>> 69ef4efd8a655abc3229da0afc653c90f03220b8
+>>>>>>> ed90f946b1347349eb138f182a1ac991e1fe6d9c
   </component>
 </project>
