@@ -81,7 +81,7 @@ right:50%;">
         <span style="color:white;">OUR Works</span>
         <img src="img/premium.png" alt="Contact" />
     </a>
-  <a class="dock-item" id="nid3" href="teamf.html">
+  <a class="dock-item" id="nid3" href="team.html">
       <span style="color:white">TEAM MEMBERS</span>
       <img src="img/team4.png" alt="Team" />
   </a>
@@ -137,184 +137,11 @@ left:35%;">
 
 <!--##############################################################################-->
 <!-- The Modal -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-97069314-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 <!--##########################################################################-->
 
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-var modal1 = document.getElementById('myModal1');
-var modal2 = document.getElementById('myModal2');
-var modal3 = document.getElementById('myModal3');
-var modal4 = document.getElementById('myModal4');
-var modal5 = document.getElementById('myModal5');
-var modal6 = document.getElementById('myModal6');
-var modal7 = document.getElementById('myModal7');
-var modal8 = document.getElementById('myModal8');
-var modal9 = document.getElementById('myModal9');
-var modal10 = document.getElementById('myModal10');
 
-// Get the button that opens the modal
-var btn = document.getElementById("nid");
-var btn1 = document.getElementById("nid1");
-var btn2 = document.getElementById("nid2");
-var btn3 = document.getElementById("nid3");
-var btn4 = document.getElementById("nid4");
-var btn4 = document.getElementById("teacher");
-var btn5 = document.getElementById("board");
-var btn6 = document.getElementById("core");
-var btn7 = document.getElementById("about");
-var btn8 = document.getElementById("timeline");
-var btn9 = document.getElementById("developer");
-var btn10 = document.getElementById("nid4");
-
-// Get the <span> element that closes the modal
-
-//var span = document.getElementsByClassName("close")[0];
-var a=document.getElementById("close1");
-var b=document.getElementById("close2");
-var c=document.getElementById("close3");
-var d=document.getElementById("close4");
-var e=document.getElementById("close5");
-var f=document.getElementById("close6");
-var g=document.getElementById("close7");
-var h=document.getElementById("close8");
-var i=document.getElementById("close9");
-var j=document.getElementById("close10");
-var k=document.getElementById("close11");
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-btn1.onclick = function() {
-    modal1.style.display = "block";
-}
-btn2.onclick = function() {
-    modal2.style.display = "block";
-}
-btn3.onclick = function() {
-    modal3.style.display = "block";
-}
-btn4.onclick = function() {
-    modal4.style.display = "block";
-}
-btn5.onclick = function() {
-    modal5.style.display = "block";
-}
-btn6.onclick = function() {
-    modal6.style.display = "block";
-}
-btn7.onclick = function() {
-    modal7.style.display = "block";
-}
-btn8.onclick = function() {
-    modal8.style.display = "block";
-}
-btn9.onclick = function() {
-    modal9.style.display = "block";
-}
-btn10.onclick = function() {
-    modal10.style.display = "block";
-}
-
-a.onclick = function() {
-    modal.style.display = "none";
-}
-b.onclick = function() {
-    modal1.style.display = "none";
-}
-c.onclick = function() {
-    modal2.style.display = "none";
-}
-d.onclick = function() {
-    modal3.style.display = "none";
-}
-e.onclick = function() {
-    modal4.style.display = "none";
-}
-f.onclick = function() {
-    modal5.style.display = "none";
-}
-g.onclick = function() {
-    modal6.style.display = "none";
-}
-h.onclick = function() {
-    modal7.style.display = "none";
-}
-i.onclick = function() {
-    modal8.style.display = "none";
-}
-j.onclick = function() {
-    modal9.style.display = "none";
-}
-k.onclick = function() {
-    modal10.style.display = "none";
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-    if (event.target == modal1) {
-        modal1.style.display = "none";
-    }
-		if (event.target == modal2) {
-				modal2.style.display = "none";
-		}
-		if (event.target == modal3) {
-				modal3.style.display = "none";
-		}
-		if (event.target == modal4) {
-				modal4.style.display = "none";
-		}
-		if (event.target == modal5) {
-				modal5.style.display = "none";
-		}
-		if (event.target == modal6) {
-				modal6.style.display = "none";
-		}
-		if (event.target == modal7) {
-				modal7.style.display = "none";
-		}
-		if (event.target == modal8) {
-				modal8.style.display = "none";
-		}
-		if (event.target == modal9) {
-				modal9.style.display = "none";
-		}
-		if (event.target == modal10) {
-				modal10.style.display = "none";
-		}
-}
-</script>
-
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>	
         <script src="js/EasePack.min.js"></script>
 		<script src="js/dock.js"></script>
 		<script src="js/background.js"></script>
