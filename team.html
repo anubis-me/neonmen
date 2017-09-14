@@ -5,92 +5,300 @@
 
 
 
-		<!-- DC Dock Menu CSS -->
-		<link type="text/css" rel="stylesheet" href="dcodes/menus/dock/css/dc_dock_menu.html" />
-		<!-- jQuery Library (skip this step if already called on page ) -->
-		<script type="text/javascript" src="dcodes/jquery.min.html"></script> <!-- (do not call twice) -->
-		<!-- DC Dock Menu JS -->
-		<script type="text/javascript" src="dcodes/menus/dock/js/fisheye-iutil.min.html"></script>
-		<script type="text/javascript" src="dcodes/menus/dock/js/dc_dock_menu.html"></script>
-
-        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-		<!-- DC Dock Menu CSS -->
-		<link type="text/css" rel="stylesheet" href="../cdn.dcodes.net/2/menus/dock/css/dc_dock_menu.css" />
-		<!-- jQuery Library (skip this step if already called on page ) -->
-		<script type="text/javascript" src="../cdn.dcodes.net/2/jquery.min.js"></script> <!-- (do not call        twice) -->
-		<!-- DC Dock Menu JS -->
-		<script type="text/javascript" src="../cdn.dcodes.net/2/menus/dock/js/fisheye-iutil.min.js"></script>
-		<script type="text/javascript" src="../cdn.dcodes.net/2/menus/dock/js/dc_dock_menu.js"></script>
-
 
     	<link rel="stylesheet" href="css/style.css">
-
-
         <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>WEBBERN</title>
-		<meta name="description" content="Examples for creative website header animations using Canvas and         JavaScript" />
+		<meta name="description" content="Examples for creative website header animations using Canvas and JavaScript" />
 		<meta name="keywords" content="header, canvas, animated, creative, inspiration, javascript" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="favicon.html">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type=    					'text/css'>
-        <!-- CSS-->
-   <link rel="stylesheet" href="css/base.css">
-   <link rel="stylesheet" href="css/vendor.min.css">
-   <link rel="stylesheet" href="css/main.css">
-   <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+		  <!-- CSS-->
+	   <link rel="stylesheet" href="css/base.css">
+	   <link rel="stylesheet" href="css/vendor.min.css">
+	   <link rel="stylesheet" href="css/main.css">
+	   <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+
+	<style>
+
+		.main.container {
+			padding: 30px;
+		}
+		.member-wrapper {
+			-webkit-perspective: 1000;
+			-moz-perspective: 1000;
+			-ms-perspective: 1000;
+			perspective: 1000;
+			-ms-transform: perspective(1000px);
+			-moz-transform: perspective(1000px);
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			margin-bottom: 30px;
+		}
+		.member-wrapper .member {
+			-webkit-transition: 0.6s;
+			-webkit-transform-style: preserve-3d;
+			-ms-transition: 0.6s;
+			-moz-transition: 0.6s;
+			-moz-transform: perspective(1000px);
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			transition: 0.6s;
+			transform-style: preserve-3d;
+			position: relative;
+		}
+		.member-wrapper:hover .info {
+			-webkit-transform: rotateY(0deg);
+			-moz-transform: rotateY(0deg);
+			-o-transform: rotateY(0deg);
+			-ms-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+		}
+		.member-wrapper:hover .photo {
+			-webkit-transform: rotateY(180deg);
+			-moz-transform: rotateY(180deg);
+			-o-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+		}
+		.member {
+			transition: 0.3s;
+			transform-style: preserve-3d;
+			position: relative;
+			padding-bottom: 130%;
+		}
+		.photo, .info {
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			-ms-backface-visibility: hidden;
+			backface-visibility: hidden;
+			-webkit-transition: 0.6s;
+			-webkit-transform-style: preserve-3d;
+			-webkit-transform: rotateY(0deg);
+			-moz-transition: 0.6s;
+			-moz-transform-style: preserve-3d;
+			-moz-transform: rotateY(0deg);
+			-o-transition: 0.6s;
+			-o-transform-style: preserve-3d;
+			-o-transform: rotateY(0deg);
+			-ms-transition: 0.6s;
+			-ms-transform-style: preserve-3d;
+			-ms-transform: rotateY(0deg);
+			transition: 0.6s;
+			transform-style: preserve-3d;
+			transform: rotateY(0deg);
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.photo {
+			background-size: cover;
+			background-position: 50% 50%;
+			z-index: 2;
+			transform: rotateY(0deg);
+			backface-visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			border-radius: 6px;
+			-webkit-transform: rotateY(0deg);
+			-ms-transform: rotateY(0deg);
+			z-index: 2;
+		}
+		.info {
+			transform: rotateY(180deg);
+			backface-visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background-color: #dadada;
+			border-radius: 6px;
+			-webkit-transform: rotateY(-180deg);
+			-moz-transform: rotateY(-180deg);
+			-o-transform: rotateY(-180deg);
+			-ms-transform: rotateY(-180deg);
+			transform: rotateY(-180deg);
+		}
+		.info h3 {
+			font-weight: bold;
+			font-size: 42px;
+			padding: 30px;
+			background-color: #7e57c2;
+			margin: 0;
+			color: #fff;
+			text-align: center;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		.info .social {
+			padding: 50px 30px 30px;
+			background-color: #fff;
+			text-align: center;
+			position: relative;
+		}
+		.info .social {
+			position: relative;
+		}
+		.info .social::before {
+			content: '\f0d7';
+			font-family: 'FontAwesome';
+			font-size: 72px;
+			color: #7e57c2;
+			position: absolute;
+			top: -45px;
+			left: 50%;
+			margin-left: -21px;
+		}
+		.info .social a {
+			color: #fff;
+		}
+		.info .social a i {
+			width: 40px;
+			line-height: 40px;
+			background-color: #333;
+			margin: 0 3px;
+			border-radius: 4px;
+			opacity: 0.4;
+			transition: 0.3s;
+		}
+		.info .social a i:hover {
+			opacity: 1;
+		}
+		.info .social a i.fa-facebook:hover { background-color: #3b5998; }
+		.info .social a i.fa-linkedin:hover { background-color: #007bb6; }
+		.info .social a i.fa-google-plus:hover { background-color: #dd4b39; }
+		.info .social a i.fa-envelope:hover { background-color: #00a99e; }
+		.info .bio {
+			padding: 30px;
+			text-align: justify;
+		}
+		.info .bio h4 { margin-top: 0; }
+		#credits { color: #777; text-align: center; }
+		#credits a { color: #7861af; }
+	</style>
 
    
 </head>
 <body>
 
-<!-- DC Menu Dock Settings: horizontal style -->
-<script type="text/javascript">
-    $(function () {
-        // Dock initialize
-        $('#dock').Fisheye({
-            maxWidth: 40,
-            items: 'a',
-            itemsText: 'span',
-            container: '.dock-container',
-            itemWidth: 70,
-            proximity: 100,
-            alignment: 'left',
-            valign: 'bottom',
-            halign: 'center'
-        });
-    });
-</script>
-<!-- DC Menu Dock Start -->
-<div id="dock" class="dc_dockmenu" style="position: absolute;margin: 0;padding: 0;top: 80%;left:50%;right:50%;">
-	<div class="dock-container">
-		<a class="dock-item" id="nid" href="about.html"><span style="color:white;">ABOUT</span><img src="img/uevents.png" alt="Contact" /></a>
-		<a class="dock-item" id="nid1" href="skills.html"><span style="color:white">OUR SKILLs</span><img src="img/developer.png" alt="Contact" /></a>
-		<a class="dock-item" id="nid2" href="#"><span style="color:white;">OUR Works</span><img src="img/premium.png" alt="Contact" /></a>
-		<a class="dock-item" id="nid3" href="team1.html"><span style="color:white">TEAM MEMBERS</span><img src="img/board.png" alt="Contact" /></a>
-		<a class="dock-item" id="nid4" href="contact.html"><span style="color:white">CONTACT</span><img src="img/if_gmail_1147408.png" alt="Contact" /></a>  </div>
-    </div>
-<!--DC Menu Dock End-->
-
   <div class="container demo-1">
  	<div class="content">
  		<div id="large-header" class="large-header">
-		<link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
-        <div  style="position: absolute;margin: 0;padding: 0;top: 30%;left:35%;">
+		  <div  style="position: absolute;margin: 0;padding: 0;top: 30%;left:35%;">
 
-                    <!--***********************************************-->
-                    <div style="margin-top:-200px;">
+			  <!--***********************************************-->
+			  <div style="margin-top:-200px;">
                     <h1 style="text-align:center;">Team Members</h1>
-                    </div>
 
 
-<!--*******************************************************-->
+
+
+				  <div class="container main">
+		      	  <div class="row">
+					  <h1 style="text-align:center;color:#fff;font-weight:bold;margin-bottom:60px;">Responsive Team Member Cards</h1>
+
+					   <section id="team">
+						  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+
+							  <div class="member-wrapper" style="width: p">
+
+								  	  <div class="member" >
+									  <div class="photo" style="background-image: url('https://farm5.staticflickr.com/4069/4277734103_d38b5fac84_o.jpg')">
+									  </div>
+
+									  <div class="info">
+										  <h3>Peter</h3>
+										  <div class="social">
+											  <a href="#"><i class="fa fa-facebook"></i></a>
+											  <a href="#"><i class="fa fa-linkedin"></i></a>
+											  <a href="#"><i class="fa fa-google-plus"></i></a>
+											  <a href="#"><i class="fa fa-envelope"></i></a>
+										  </div>
+										  <div class="bio">
+											  <h4>Bio:</h4>
+											  Integer quis mollis purus. Vestibulum ac tortor cursus, fermentum justo at, eleifend neque. Sed laoreet eros urna, sed varius mi finibus vel. Ut ut nisi vitae ligula consequat feugiat. Nulla condimentum ante et ultricies pulvinar. Pellentesque nec ultrices quam. Curabitur eu imperdiet augue, eu porta libero.
+										  </div>
+									  </div>
+								  </div>
+							  </div>
+
+						  </div>
+
+						  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+								  <div class="member-wrapper">
+									  <div class="member">
+										  <div class="photo" style="background-image: url('https://farm5.staticflickr.com/4045/4277734075_278d4ddfa0_o.jpg')">
+										  </div>
+										  <div class="info">
+											  <h3>Rickardo</h3>
+											  <div class="social">
+												  <a href="#"><i class="fa fa-facebook"></i></a>
+												  <a href="#"><i class="fa fa-linkedin"></i></a>
+												  <a href="#"><i class="fa fa-google-plus"></i></a>
+												  <a href="#"><i class="fa fa-envelope"></i></a>
+											  </div>
+											  <div class="bio">
+												  <h4>Bio:</h4>
+												  Integer quis mollis purus. Vestibulum ac tortor cursus, fermentum justo at, eleifend neque. Sed laoreet eros urna, sed varius mi finibus vel. Ut ut nisi vitae ligula consequat feugiat. Nulla condimentum ante et ultricies pulvinar. Pellentesque nec ultrices quam. Curabitur eu imperdiet augue, eu porta libero.
+											  </div>
+										  </div>
+									  </div>
+								  </div>
+							  </div>
+
+						   <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							   <div class="member-wrapper">
+								   <div class="member">
+									   <div class="photo" style="background-image: url('https://farm5.staticflickr.com/4003/4278480984_157b32696a_o.jpg')">
+									   </div>
+									   <div class="info">
+										   <h3>Sean</h3>
+										   <div class="social">
+											   <a href="#"><i class="fa fa-facebook"></i></a>
+											   <a href="#"><i class="fa fa-linkedin"></i></a>
+											   <a href="#"><i class="fa fa-google-plus"></i></a>
+											   <a href="#"><i class="fa fa-envelope"></i></a>
+										   </div>
+										   <div class="bio">
+											   <h4>Bio:</h4>
+											   Integer quis mollis purus. Vestibulum ac tortor cursus, fermentum justo at, eleifend neque. Sed laoreet eros urna, sed varius mi finibus vel. Ut ut nisi vitae ligula consequat feugiat. Nulla condimentum ante et ultricies pulvinar. Pellentesque nec ultrices quam. Curabitur eu imperdiet augue, eu porta libero.
+										   </div>
+									   </div>
+								   </div>
+							   </div>
+						   </div>
+						  </section>
+
+					  <div class="clearfix"></div>
+
+
+					  </div>
+				  </div>
+
+
+
+
+
+
+
+
+			  </div>
+
+
+			  <!--*******************************************************-->
+
+
+
         </div>
 			<canvas id="demo-canvas" style="width:110%;height:110%;">
 
@@ -101,13 +309,11 @@
 
 
 
-   <script src='../cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
-   <script src='../cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js'></script>
-   <script src="js/index.html"></script>
-   <script src="js/machine.js"></script>
+   <script src='cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+   <script src='cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js'></script>
+
    <script src="js/TweenLite.min.js"></script>
    <script src="js/EasePack.min.js"></script>
-   <script src="js/dock.js"></script>
    <script src="js/rAF.js"></script>
    <script src="js/background.js"></script>
         
@@ -116,18 +322,6 @@
 
 
 
-
-		<script src='../cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
-		<script src='../cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js'></script>
-	    <script src="js/index.html"></script>
-	    <script src="js/machine.js"></script>
-		<script src="js/TweenLite.min.js"></script>
-		<script src="js/EasePack.min.js"></script>
-		<script src="js/dock.js"></script>
-		<script src="js/rAF.js"></script>
-        <script src="js/background.js"></script>
-        
-	</body>
 
 </html>
 
