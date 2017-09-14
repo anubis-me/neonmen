@@ -1,327 +1,157 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	
+
 <head>
 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Satisfy" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 
 
-    	<link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <title>WEBBERN</title>
 
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WEBBERN</title>
-		<meta name="description" content="Examples for creative website header animations using Canvas and JavaScript" />
-		<meta name="keywords" content="header, canvas, animated, creative, inspiration, javascript" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.html">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		  <!-- CSS-->
-	   <link rel="stylesheet" href="css/base.css">
-	   <link rel="stylesheet" href="css/vendor.min.css">
-	   <link rel="stylesheet" href="css/main.css">
-	   <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
 
-	<style>
+    <link rel="stylesheet" type="text/css" href="css/team.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <style>
 
-		.main.container {
-			padding: 30px;
-		}
-		.member-wrapper {
-			-webkit-perspective: 1000;
-			-moz-perspective: 1000;
-			-ms-perspective: 1000;
-			perspective: 1000;
-			-ms-transform: perspective(1000px);
-			-moz-transform: perspective(1000px);
-			-moz-transform-style: preserve-3d;
-			-ms-transform-style: preserve-3d;
-			margin-bottom: 30px;
-		}
-		.member-wrapper .member {
-			-webkit-transition: 0.6s;
-			-webkit-transform-style: preserve-3d;
-			-ms-transition: 0.6s;
-			-moz-transition: 0.6s;
-			-moz-transform: perspective(1000px);
-			-moz-transform-style: preserve-3d;
-			-ms-transform-style: preserve-3d;
-			transition: 0.6s;
-			transform-style: preserve-3d;
-			position: relative;
-		}
-		.member-wrapper:hover .info {
-			-webkit-transform: rotateY(0deg);
-			-moz-transform: rotateY(0deg);
-			-o-transform: rotateY(0deg);
-			-ms-transform: rotateY(0deg);
-			transform: rotateY(0deg);
-		}
-		.member-wrapper:hover .photo {
-			-webkit-transform: rotateY(180deg);
-			-moz-transform: rotateY(180deg);
-			-o-transform: rotateY(180deg);
-			transform: rotateY(180deg);
-		}
-		.member {
-			transition: 0.3s;
-			transform-style: preserve-3d;
-			position: relative;
-			padding-bottom: 130%;
-		}
-		.photo, .info {
-			-webkit-backface-visibility: hidden;
-			-moz-backface-visibility: hidden;
-			-ms-backface-visibility: hidden;
-			backface-visibility: hidden;
-			-webkit-transition: 0.6s;
-			-webkit-transform-style: preserve-3d;
-			-webkit-transform: rotateY(0deg);
-			-moz-transition: 0.6s;
-			-moz-transform-style: preserve-3d;
-			-moz-transform: rotateY(0deg);
-			-o-transition: 0.6s;
-			-o-transform-style: preserve-3d;
-			-o-transform: rotateY(0deg);
-			-ms-transition: 0.6s;
-			-ms-transform-style: preserve-3d;
-			-ms-transform: rotateY(0deg);
-			transition: 0.6s;
-			transform-style: preserve-3d;
-			transform: rotateY(0deg);
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-		.photo {
-			background-size: cover;
-			background-position: 50% 50%;
-			z-index: 2;
-			transform: rotateY(0deg);
-			backface-visibility: hidden;
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			border-radius: 6px;
-			-webkit-transform: rotateY(0deg);
-			-ms-transform: rotateY(0deg);
-			z-index: 2;
-		}
-		.info {
-			transform: rotateY(180deg);
-			backface-visibility: hidden;
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			background-color: #dadada;
-			border-radius: 6px;
-			-webkit-transform: rotateY(-180deg);
-			-moz-transform: rotateY(-180deg);
-			-o-transform: rotateY(-180deg);
-			-ms-transform: rotateY(-180deg);
-			transform: rotateY(-180deg);
-		}
-		.info h3 {
-			font-weight: bold;
-			font-size: 42px;
-			padding: 30px;
-			background-color: #7e57c2;
-			margin: 0;
-			color: #fff;
-			text-align: center;
-			border-top-left-radius: 5px;
-			border-top-right-radius: 5px;
-		}
-		.info .social {
-			padding: 50px 30px 30px;
-			background-color: #fff;
-			text-align: center;
-			position: relative;
-		}
-		.info .social {
-			position: relative;
-		}
-		.info .social::before {
-			content: '\f0d7';
-			font-family: 'FontAwesome';
-			font-size: 72px;
-			color: #7e57c2;
-			position: absolute;
-			top: -45px;
-			left: 50%;
-			margin-left: -21px;
-		}
-		.info .social a {
-			color: #fff;
-		}
-		.info .social a i {
-			width: 40px;
-			line-height: 40px;
-			background-color: #333;
-			margin: 0 3px;
-			border-radius: 4px;
-			opacity: 0.4;
-			transition: 0.3s;
-		}
-		.info .social a i:hover {
-			opacity: 1;
-		}
-		.info .social a i.fa-facebook:hover { background-color: #3b5998; }
-		.info .social a i.fa-linkedin:hover { background-color: #007bb6; }
-		.info .social a i.fa-google-plus:hover { background-color: #dd4b39; }
-		.info .social a i.fa-envelope:hover { background-color: #00a99e; }
-		.info .bio {
-			padding: 30px;
-			text-align: justify;
-		}
-		.info .bio h4 { margin-top: 0; }
-		#credits { color: #777; text-align: center; }
-		#credits a { color: #7861af; }
-	</style>
+    </style>
 
-   
 </head>
+
 <body>
 
-  <div class="container demo-1">
- 	<div class="content">
- 		<div id="large-header" class="large-header">
-		  <div  style="position: absolute;margin: 0;padding: 0;top: 30%;left:35%;">
+<div class="container demo-1">
 
-			  <!--***********************************************-->
-			  <div style="margin-top:-200px;">
-                    <h1 style="text-align:center;">Team Members</h1>
+    <div class="content">
 
+        <div id="large-header" class="large-header">
 
+              <div  style="position: absolute;margin: 0;padding: 0;top: 10%;left:15%;">
 
-
-				  <div class="container main">
-		      	  <div class="row">
-					  <h1 style="text-align:center;color:#fff;font-weight:bold;margin-bottom:60px;">Responsive Team Member Cards</h1>
-
-					   <section id="team">
-						  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-
-							  <div class="member-wrapper" style="width: p">
-
-								  	  <div class="member" >
-									  <div class="photo" style="background-image: url('https://farm5.staticflickr.com/4069/4277734103_d38b5fac84_o.jpg')">
-									  </div>
-
-									  <div class="info">
-										  <h3>Peter</h3>
-										  <div class="social">
-											  <a href="#"><i class="fa fa-facebook"></i></a>
-											  <a href="#"><i class="fa fa-linkedin"></i></a>
-											  <a href="#"><i class="fa fa-google-plus"></i></a>
-											  <a href="#"><i class="fa fa-envelope"></i></a>
-										  </div>
-										  <div class="bio">
-											  <h4>Bio:</h4>
-											  Integer quis mollis purus. Vestibulum ac tortor cursus, fermentum justo at, eleifend neque. Sed laoreet eros urna, sed varius mi finibus vel. Ut ut nisi vitae ligula consequat feugiat. Nulla condimentum ante et ultricies pulvinar. Pellentesque nec ultrices quam. Curabitur eu imperdiet augue, eu porta libero.
-										  </div>
-									  </div>
-								  </div>
-							  </div>
-
-						  </div>
-
-						  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-								  <div class="member-wrapper">
-									  <div class="member">
-										  <div class="photo" style="background-image: url('https://farm5.staticflickr.com/4045/4277734075_278d4ddfa0_o.jpg')">
-										  </div>
-										  <div class="info">
-											  <h3>Rickardo</h3>
-											  <div class="social">
-												  <a href="#"><i class="fa fa-facebook"></i></a>
-												  <a href="#"><i class="fa fa-linkedin"></i></a>
-												  <a href="#"><i class="fa fa-google-plus"></i></a>
-												  <a href="#"><i class="fa fa-envelope"></i></a>
-											  </div>
-											  <div class="bio">
-												  <h4>Bio:</h4>
-												  Integer quis mollis purus. Vestibulum ac tortor cursus, fermentum justo at, eleifend neque. Sed laoreet eros urna, sed varius mi finibus vel. Ut ut nisi vitae ligula consequat feugiat. Nulla condimentum ante et ultricies pulvinar. Pellentesque nec ultrices quam. Curabitur eu imperdiet augue, eu porta libero.
-											  </div>
-										  </div>
-									  </div>
-								  </div>
-							  </div>
-
-						   <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-							   <div class="member-wrapper">
-								   <div class="member">
-									   <div class="photo" style="background-image: url('https://farm5.staticflickr.com/4003/4278480984_157b32696a_o.jpg')">
-									   </div>
-									   <div class="info">
-										   <h3>Sean</h3>
-										   <div class="social">
-											   <a href="#"><i class="fa fa-facebook"></i></a>
-											   <a href="#"><i class="fa fa-linkedin"></i></a>
-											   <a href="#"><i class="fa fa-google-plus"></i></a>
-											   <a href="#"><i class="fa fa-envelope"></i></a>
-										   </div>
-										   <div class="bio">
-											   <h4>Bio:</h4>
-											   Integer quis mollis purus. Vestibulum ac tortor cursus, fermentum justo at, eleifend neque. Sed laoreet eros urna, sed varius mi finibus vel. Ut ut nisi vitae ligula consequat feugiat. Nulla condimentum ante et ultricies pulvinar. Pellentesque nec ultrices quam. Curabitur eu imperdiet augue, eu porta libero.
-										   </div>
-									   </div>
-								   </div>
-							   </div>
-						   </div>
-						  </section>
-
-					  <div class="clearfix"></div>
+                <!--***********************************************-->
 
 
-					  </div>
-				  </div>
+
+                  <ul id="messages">
+
+                      <!-- 1 -->
+                      <li>
+                          <div class="infos">
+                              <img src="img/images/AbhinavG.jpeg" alt="Abhinav" title="Webbern" />
+                              <a href="https://twitter.com/webbern" class="sprite twitter">@abhi.now</a>
+                              <a href="https://www.facebook.com/groups/115089745169149" class="sprite facebook">Abhinav</a>
+                              <a href="https://github.com/arbaoui-mehdi" class="sprite github">anubis-me</a>
+                          </div>
+                          <div class="content1">
+                              <h3>
+                                  Abhinav Gupta
+                                  <b>CEO &amp; Founder "Web Developer"</b>
+                              </h3>
+                              <p>
+                                  Etiam iaculis, ipsum sit amet scelerisque dictum, diam justo suscipit mauris.
+                              </p>
+                          </div>
+                      </li>
+                      <!-- 2 -->
+                      <li>
+                          <div class="infos">
+                              <img src="img/images/vaibhav.PNG" alt="Vaibhav"  title="Webbern" />
+                              <a href="https://twitter.com/webodream" class="sprite twitter">@webod</a>
+                              <a href="https://www.facebook.com/groups/115089745169149" class="sprite facebook">depot.webdesigner</a>
+                              <a href="https://github.com/arbaoui-mehdi" class="sprite github">@arbaoui-mehdi</a>
+                          </div>
+                          <div class="content1">
+                              <h3>
+                                  Vaibhav Bansal
+                                  <b>webdeveloper</b>
+                              </h3>
+                              <p>
+                                  Lorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.
+                              </p>
+                          </div>
+                      </li>
+
+                      <!-- 3 -->
+                      <li>
+                          <div class="infos">
+                              <img src="img/images/naman.PNG" alt="Naman" title="Naman" />
+                              <a href="https://twitter.com/webodream" class="sprite twitter">@webodream</a>
+                              <a href="https://www.facebook.com/groups/115089745169149" class="sprite facebook">depot.webdesigner</a>
+                              <a href="https://github.com/arbaoui-mehdi" class="sprite github">@arbaoui-mehdi</a>
+                          </div>
+                          <div class="content1">
+                              <h3>
+                                  Naman Anand
+                                  <b>webdesigner </b>
+                              </h3>
+                              <p>
+                                  Lorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.Lorem ipsum
+                              </p>
+                          </div>
+                      </li>
+
+                      <!-- 4 -->
+                      <li>
+                          <div class="infos">
+                              <img src="http://farm4.staticflickr.com/3412/3446830982_c8b55cc7e8_q.jpg" alt="" title="by tresMunkeys" />
+                              <a href="https://twitter.com/webodream" class="sprite twitter">@webodream</a>
+                              <a href="https://www.facebook.com/groups/115089745169149" class="sprite facebook">depot.webdesigner</a>
+                              <a href="https://github.com/arbaoui-mehdi" class="sprite github">@arbaoui-mehdi</a>
+                          </div>
+                          <div class="content1">
+                              <h3>
+                                  June Schreiber
+                                  <b>CEO &amp; Founder</b>
+                              </h3>
+                              <p>
+                                  Phasellus pharetra, libero sed egestas condimentum, ligula nibh cursus turpis, sed convallis               </p>
+                          </div>
+                      </li>
 
 
 
 
+                <!--*******************************************************-->
+            </div>
 
 
+            <canvas id="demo-canvas" style="width:110%;height:110%;">
 
-
-			  </div>
-
-
-			  <!--*******************************************************-->
-
+            </canvas>
 
 
         </div>
-			<canvas id="demo-canvas" style="width:110%;height:110%;">
-
-            </canvas>
-		</div>
-	</div>
-  </div>
 
 
 
-   <script src='cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
-   <script src='cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js'></script>
 
-   <script src="js/TweenLite.min.js"></script>
-   <script src="js/EasePack.min.js"></script>
-   <script src="js/rAF.js"></script>
-   <script src="js/background.js"></script>
-        
+
+
+
+        <!--##############################################################################-->
+
+
+
+<script>
+    $(function() {
+        var $list = $('ul li');
+        $list.filter(':first').addClass('animated flipInX');
+        setInterval(function() {
+            if( $list.filter('.flipInX').index() !== $list.length) {
+                $list.filter('.flipInX').removeClass('animated flipInX').next().addClass('animated flipInX');
+            }
+        }, 400);
+    });
+</script>
+
+        <script src="js/background.js"></script>
+        <script src="js/EasePack.min.js"></script>
 </body>
 
-
-
-
-
 </html>
+
 
