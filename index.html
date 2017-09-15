@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	
+<head>
+		<!-- DC Dock Menu CSS -->
+		<link type="text/css" rel="stylesheet" href="dcodes/menus/dock/css/dc_dock_menu.html" />
+		<!-- jQuery Library (skip this step if already called on page ) -->
+		<script type="text/javascript" src="dcodes/jquery.min.html"></script> <!-- (do not call twice) -->
+		<!-- DC Dock Menu JS -->
+		<script type="text/javascript" src="dcodes/menus/dock/js/fisheye-iutil.min.html"></script>
+		<script type="text/javascript" src="dcodes/menus/dock/js/dc_dock_menu.html"></script>
+		<!-- DC Dock Menu CSS -->
+		<link type="text/css" rel="stylesheet" href="cdn.dcodes.net/2/menus/dock/css/dc_dock_menu.css" />
+		<!-- jQuery Library (skip this step if already called on page ) -->
+		<script type="text/javascript" src="cdn.dcodes.net/2/jquery.min.js"></script> <!-- (do not call twice) -->
+		<!-- DC Dock Menu JS -->
+		<script type="text/javascript" src="cdn.dcodes.net/2/menus/dock/js/fisheye-iutil.min.js"></script>
+		<script type="text/javascript" src="cdn.dcodes.net/2/menus/dock/js/dc_dock_menu.js"></script>
+     	<link rel="stylesheet" href="css/style.css">
+        <link href="css/m.css" rel="stylesheet" type="text/css">
+        <link href="css/test.css" rel="stylesheet" type="text/css">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>WEBBERN</title>
+		<meta name="description" content="Examples for creative website header animations using Canvas and JavaScript" />
+		<meta name="keywords" content="header, canvas, animated, creative, inspiration, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+        <!--========================================================-->
+        <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+        <!--==============================================================-->
+        <!--===========================================-->
+        <!--=============================================================-->
+	</head>
+	<body>
+
+		<div class="container demo-1">
+			<div class="content">
+
+				<div id="large-header" class="large-header">
+
+					<!-- DC Menu Dock Settings: horizontal style -->
+<script type="text/javascript">
+    $(function () {
+    // Dock initialize
+    $('#dock').Fisheye({
+        maxWidth: 40,
+        items: 'a',
+        itemsText: 'span',
+        container: '.dock-container',
+        itemWidth: 70,
+        proximity: 100,
+        alignment: 'left',
+        valign: 'bottom',
+        halign: 'center'
+    });
+});
+</script>
+<!-- DC Menu Dock Start -->
+<div id="dock" class="dc_dockmenu" style="position: absolute;margin: 0;
+padding: 0;
+
+
+top: 80%;
+left:50%;
+right:50%;">
+  <div class="dock-container">
+
+   <a class="dock-item" id="nid" href="about.html">
+       <span style="color:white;">ABOUT</span>
+       <img src="img/uevents.png" alt="Contact" />
+   </a>
+  <a class="dock-item" id="nid1" href="skills.html">
+      <span style="color:white">OUR SKILLs</span>
+      <img src="img/developer.png" alt="Contact" />
+  </a>
+	<a class="dock-item" id="nid2" href="#">
+        <span style="color:white;">OUR Works</span>
+        <img src="img/premium.png" alt="Contact" />
+    </a>
+  <a class="dock-item" id="nid3" href="teamf.html">
+      <span style="color:white">TEAM MEMBERS</span>
+      <img src="img/team4.png" alt="Team" />
+  </a>
+	<a class="dock-item" id="nid4" href="contact.html">
+        <span style="color:white">CONTACT</span>
+        <img src="img/contact.png" alt="Contact" />
+    </a>
+  </div>
+</div>
+<!--DC Menu Dock End-->
+<!--<link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>-->
+<div  style="position: absolute;margin: 0;
+padding: 0;
+
+top: 30%;
+left:35%;">
+<div style="color:#FFFFFF;margin-top:-200px;">
+<!--==================================================================-->
+<!--*********************************************-->
+<div class="men" style="margin-left:-600px;opacity:0.1">
+<h1 class="linear-wipe">WEBBERN</h1>
+</div>
+<!------------------------------------------------------->
+<div style="margin-top:-400px;opacity:0.1;margin-right:-200px;margin-bottom:-400px;float:right">
+<ul class="wrapper">
+  <div class="sun">
+    <div class="star"></div>
+  </div>
+  <div class="mercury">
+    <div class="planet">
+      <div class="shadow"></div>
+    </div>
+  </div>
+  <div class="venus">
+    <div class="planet">
+      <div class="shadow"></div>
+    </div>
+  </div>
+  <div class="earth">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+  <div class="mars">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+  <div class="jupiter">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+</ul>
+</div>
+<!--======================================================-->
+
+<!--==================================================-->
+
+<!--=====================================================-->
+
+<!--******************************************************************-->
+</div>
+
+
+</div>
+
+
+					<canvas id="demo-canvas" style="width:100%;height:100%;"> </canvas>
+
+
+				</div>
+
+<!--##############################################################################-->
+<!-- The Modal -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97069314-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!--##########################################################################-->
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+var modal1 = document.getElementById('myModal1');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('myModal4');
+var modal5 = document.getElementById('myModal5');
+var modal6 = document.getElementById('myModal6');
+var modal7 = document.getElementById('myModal7');
+var modal8 = document.getElementById('myModal8');
+var modal9 = document.getElementById('myModal9');
+var modal10 = document.getElementById('myModal10');
+
+// Get the button that opens the modal
+var btn = document.getElementById("nid");
+var btn1 = document.getElementById("nid1");
+var btn2 = document.getElementById("nid2");
+var btn3 = document.getElementById("nid3");
+var btn4 = document.getElementById("nid4");
+var btn4 = document.getElementById("teacher");
+var btn5 = document.getElementById("board");
+var btn6 = document.getElementById("core");
+var btn7 = document.getElementById("about");
+var btn8 = document.getElementById("timeline");
+var btn9 = document.getElementById("developer");
+var btn10 = document.getElementById("nid4");
+
+// Get the <span> element that closes the modal
+
+//var span = document.getElementsByClassName("close")[0];
+var a=document.getElementById("close1");
+var b=document.getElementById("close2");
+var c=document.getElementById("close3");
+var d=document.getElementById("close4");
+var e=document.getElementById("close5");
+var f=document.getElementById("close6");
+var g=document.getElementById("close7");
+var h=document.getElementById("close8");
+var i=document.getElementById("close9");
+var j=document.getElementById("close10");
+var k=document.getElementById("close11");
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+btn1.onclick = function() {
+    modal1.style.display = "block";
+}
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+btn4.onclick = function() {
+    modal4.style.display = "block";
+}
+btn5.onclick = function() {
+    modal5.style.display = "block";
+}
+btn6.onclick = function() {
+    modal6.style.display = "block";
+}
+btn7.onclick = function() {
+    modal7.style.display = "block";
+}
+btn8.onclick = function() {
+    modal8.style.display = "block";
+}
+btn9.onclick = function() {
+    modal9.style.display = "block";
+}
+btn10.onclick = function() {
+    modal10.style.display = "block";
+}
+
+a.onclick = function() {
+    modal.style.display = "none";
+}
+b.onclick = function() {
+    modal1.style.display = "none";
+}
+c.onclick = function() {
+    modal2.style.display = "none";
+}
+d.onclick = function() {
+    modal3.style.display = "none";
+}
+e.onclick = function() {
+    modal4.style.display = "none";
+}
+f.onclick = function() {
+    modal5.style.display = "none";
+}
+g.onclick = function() {
+    modal6.style.display = "none";
+}
+h.onclick = function() {
+    modal7.style.display = "none";
+}
+i.onclick = function() {
+    modal8.style.display = "none";
+}
+j.onclick = function() {
+    modal9.style.display = "none";
+}
+k.onclick = function() {
+    modal10.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+		if (event.target == modal2) {
+				modal2.style.display = "none";
+		}
+		if (event.target == modal3) {
+				modal3.style.display = "none";
+		}
+		if (event.target == modal4) {
+				modal4.style.display = "none";
+		}
+		if (event.target == modal5) {
+				modal5.style.display = "none";
+		}
+		if (event.target == modal6) {
+				modal6.style.display = "none";
+		}
+		if (event.target == modal7) {
+				modal7.style.display = "none";
+		}
+		if (event.target == modal8) {
+				modal8.style.display = "none";
+		}
+		if (event.target == modal9) {
+				modal9.style.display = "none";
+		}
+		if (event.target == modal10) {
+				modal10.style.display = "none";
+		}
+}
+</script>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>	
+        <script src="js/EasePack.min.js"></script>
+		<script src="js/dock.js"></script>
+		<script src="js/background.js"></script>
+        
+	</body>
+</html>

@@ -17,7 +17,7 @@ var ball = {
    ball_color = {
        r: 000,
        g: 000,
-       b: 000
+       b: 255
    },
    R = 2,
    balls = [],
@@ -25,7 +25,7 @@ var ball = {
    alpha_phase = 0,
     
 // Line
-   link_line_width = 0.4,
+   link_line_width = 0.3,
    dis_limit = 200,
    add_mouse_point = true,
    mouse_in = false,
