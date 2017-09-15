@@ -15,8 +15,8 @@ var ball = {
       phase: 0
    },
    ball_color = {
-       r: 200,
-       g: 255,
+       r: 000,
+       g: 000,
        b: 255
    },
    R = 2,
@@ -25,7 +25,7 @@ var ball = {
    alpha_phase = 0,
     
 // Line
-   link_line_width = 0.4,
+   link_line_width = 0.3,
    dis_limit = 200,
    add_mouse_point = true,
    mouse_in = false,

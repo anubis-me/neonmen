@@ -10,7 +10,7 @@
 }
 
 .demo-1 .large-header {
-	background-color:rgba(19, 29, 39, 0.94);
+	background-color:rgba(0, 0, 0, 0.9);
 }
 
 .demo-2 .large-header {
@@ -243,9 +243,9 @@ p{
   padding: 10px;
   margin: 0;
   font-size: 14px;
-  background: #f1f1f1;
   color: #656565;
 }
+<!-- background: #f1f1f1;-->
 h2{
   padding: 15px;
   margin: 0;

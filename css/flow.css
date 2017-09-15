@@ -1,0 +1,178 @@
+
+/* CSS Document */
+
+ul {
+  list-style: none;
+  width: 150px;
+  margin: 0 auto;
+  margin-top:-300px;
+}
+
+li {
+  height: 10px;
+  width: 10px;
+  margin-left: 0px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  background: #fff;
+  animation-name: spiral;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+li:nth-child(1) {
+  animation-duration: 10s;
+}
+
+li:nth-child(2) {
+  animation-duration: 5s;
+}
+
+li:nth-child(3) {
+  animation-duration: 3.33333s;
+}
+
+li:nth-child(4) {
+  animation-duration: 2.5s;
+}
+
+li:nth-child(5) {
+  animation-duration: 2s;
+}
+
+li:nth-child(6) {
+  animation-duration: 1.66667s;
+}
+
+li:nth-child(7) {
+  animation-duration: 1.42857s;
+}
+
+li:nth-child(8) {
+  animation-duration: 1.25s;
+}
+
+li:nth-child(9) {
+  animation-duration: 1.11111s;
+}
+
+li:nth-child(10) {
+  animation-duration: 1s;
+}
+
+li:nth-child(11) {
+  animation-duration: 0.90909s;
+}
+
+li:nth-child(12) {
+  animation-duration: 0.83333s;
+}
+
+li:nth-child(13) {
+  animation-duration: 0.76923s;
+}
+
+li:nth-child(14) {
+  animation-duration: 0.71429s;
+}
+
+li:nth-child(15) {
+  animation-duration: 0.66667s;
+}
+
+li:nth-child(16) {
+  animation-duration: 0.625s;
+}
+
+li:nth-child(17) {
+  animation-duration: 0.58824s;
+}
+
+li:nth-child(18) {
+  animation-duration: 0.55556s;
+}
+
+li:nth-child(19) {
+  animation-duration: 0.52632s;
+}
+
+li:nth-child(20) {
+  animation-duration: 0.5s;
+}
+
+li:nth-child(21) {
+  animation-duration: 0.47619s;
+}
+
+li:nth-child(22) {
+  animation-duration: 0.45455s;
+}
+
+li:nth-child(23) {
+  animation-duration: 0.43478s;
+}
+
+li:nth-child(24) {
+  animation-duration: 0.41667s;
+}
+
+li:nth-child(25) {
+  animation-duration: 0.4s;
+}
+
+li:nth-child(26) {
+  animation-duration: 0.38462s;
+}
+
+li:nth-child(27) {
+  animation-duration: 0.37037s;
+}
+
+li:nth-child(28) {
+  animation-duration: 0.35714s;
+}
+
+li:nth-child(29) {
+  animation-duration: 0.34483s;
+}
+
+li:nth-child(30) {
+  animation-duration: 0.33333s;
+}
+
+li:nth-child(31) {
+  animation-duration: 0.32258s;
+}
+
+li:nth-child(32) {
+  animation-duration: 0.3125s;
+}
+
+li:nth-child(33) {
+  animation-duration: 0.30303s;
+}
+
+li:nth-child(34) {
+  animation-duration: 0.29412s;
+}
+
+li:nth-child(35) {
+  animation-duration: 0.28571s;
+}
+
+@keyframes spiral {
+  0% {
+    transform: translate3d(0, 0, 0);
+    height: 10px;
+    width: 10px;
+  }
+  100% {
+    transform: translate3d(150px, 0, 0);
+    height: 20px;
+    width: 20px;
+  }
+}
+
+
